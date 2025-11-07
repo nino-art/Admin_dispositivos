@@ -14,7 +14,9 @@ class DispositivosController extends Controller
     {
         //trae todos los dispositivos creados
         $dispositivos=Dispositivos::all();
+        
         return view('dispositivos.index',compact('dispositivos'));
+        
     }
 
     /**
